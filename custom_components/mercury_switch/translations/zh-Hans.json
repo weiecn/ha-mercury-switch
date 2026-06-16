@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "水星 PoE 交换机",
+        "description": "输入水星PoE交换机的连接信息",
+        "data": {
+          "host": "IP 地址",
+          "username": "用户名",
+          "password": "密码"
+        }
+      }
+    },
+    "error": {
+      "login_failed": "登录失败，请检查用户名和密码",
+      "cannot_connect": "无法连接设备，请检查 IP 地址",
+      "unknown": "未知错误"
+    },
+    "abort": {
+      "already_configured": "该设备已配置"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "system_total_power": {
+        "name": "总功率"
+      },
+      "system_used_power": {
+        "name": "已用功率"
+      },
+      "system_remaining_power": {
+        "name": "剩余功率"
+      },
+      "system_power_usage_pct": {
+        "name": "功率使用率"
+      },
+      "poe_port_power": {
+        "name": "PoE 功率"
+      },
+      "poe_port_current": {
+        "name": "PoE 电流"
+      },
+      "poe_port_voltage": {
+        "name": "PoE 电压"
+      },
+      "poe_port_status": {
+        "name": "PoE 供电状态"
+      },
+      "poe_port_pd_class": {
+        "name": "PD Class"
+      },
+      "poe_port_power_limit": {
+        "name": "功率限制"
+      },
+      "eth_link_status": {
+        "name": "连接状态"
+      },
+      "eth_link_speed": {
+        "name": "实际速率"
+      }
+    },
+    "switch": {
+      "poe_port": {
+        "name": "PoE 供电"
+      }
+    },
+    "button": {
+      "poe_power_cycle": {
+        "name": "重新上电"
+      }
+    }
+  }
+}
